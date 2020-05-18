@@ -1,5 +1,6 @@
 from IPython.display import clear_output
 import os
+import sys
 import time
 ##### Grid Size ######
 global m
@@ -10,13 +11,12 @@ n=int(input("Enter number of columns: "))
 ##### Start Direction and spot####
 d=str(input("Enter direction: dl,dr,ul,ur"))
 if d not in ['dl','dr','ul','ur']:
-    print("Enter a valid direction")
-    quit()
+    sys.exit("Enter a valid direction")
 i=int(input("Enter starting row number: "))
 j=int(input("Enter starting column number: "))
 if i>=m or j>=n:
     print("Invalid entry for starting point, row cannot exceed %d and column cannot exceed %d" % (m-1,n-1))
-    quit()
+    sys.exit(0)
 curr=[i,j]
 ##################################
 
