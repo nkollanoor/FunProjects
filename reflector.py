@@ -8,7 +8,10 @@ global n
 n=int(input("Enter number of columns: "))
 
 ##### Start Direction and spot####
-d="ul"
+d=str(input("Enter direction: dl,dr,ul,ur"))
+if d not in ['dl','dr','ul','ur']:
+    print("Enter a valid direction")
+    quit()
 i=int(input("Enter starting row number: "))
 j=int(input("Enter starting column number: "))
 if i>=m or j>=n:
