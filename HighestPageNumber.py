@@ -1,3 +1,4 @@
+### https://www.interviewquery.com/questions/last-page-number
 input='9910010110299100101103991001011045'
 # actual page numbers = [99100101102,99100101103,99100101104,5]
 ans=[]
